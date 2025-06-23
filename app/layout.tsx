@@ -1,14 +1,15 @@
-import type React from "react"
-import type { Metadata } from "next"
-import { Inter } from "next/font/google"
-import "./globals.css"
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
 
+// Load Inter font
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
   preload: true,
-})
+});
 
+// Metadata
 export const metadata: Metadata = {
   title: "Clock Time - Real-Time World Clock & Time Zone Converter | Free Online Clock",
   description:
@@ -77,13 +78,14 @@ export const metadata: Metadata = {
     yahoo: "your-yahoo-verification-code",
   },
   category: "utility",
-    generator: 'v0.dev'
-}
+  generator: "v0.dev",
+};
 
+// Root layout component
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
@@ -96,23 +98,35 @@ export default function RootLayout({
         <meta name="theme-color" content="#3b82f6" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        {/* Preload critical resources */}
-        <link rel="preload" href="/fonts/inter-var.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        {/* Preload Inter font */}
+        <link
+          rel="preload"
+          href="/fonts/inter-var.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
 
-        {/* DNS prefetch for external resources */}
+        {/* DNS prefetch for performance */}
         <link rel="dns-prefetch" href="//fonts.googleapis.com" />
         <link rel="dns-prefetch" href="//fonts.gstatic.com" />
 
-        <!-- Google tag (gtag.js) -->
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-VGDKSE11VG"></script>
-          
-          <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-VGDKSE11VG');
-          </script>
-          
+        {/* Google tag (gtag.js) */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-VGDKSE11VG"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-VGDKSE11VG');
+            `,
+          }}
+        />
+
         {/* Structured Data */}
         <script
           type="application/ld+json"
@@ -151,5 +165,5 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>{children}</body>
     </html>
-  )
+  );
 }
