@@ -127,6 +127,9 @@ export default function RootLayout({
           }}
         />
 
+        {/* Google Ads */}
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5714264985066358" crossorigin="anonymous"></script>
+
         {/* Structured Data */}
         <script
           type="application/ld+json"
