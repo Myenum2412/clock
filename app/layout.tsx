@@ -9,7 +9,6 @@ const inter = Inter({
   preload: true,
 });
 
-// Metadata
 export const metadata: Metadata = {
   title: "Clock Time - Real-Time World Clock & Time Zone Converter | Free Online Clock",
   description:
@@ -48,7 +47,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://clocktime.app",
+    url: "https://clock.myenum.in",
     title: "Clock Time - Real-Time World Clock & Time Zone Converter",
     description:
       "Free online clock time display with automatic location detection. View current time, world clock, and accurate local time for any location worldwide.",
@@ -70,18 +69,12 @@ export const metadata: Metadata = {
     images: ["/og-image.png"],
   },
   alternates: {
-    canonical: "https://clocktime.app",
-  },
-  verification: {
-    google: "your-google-verification-code",
-    yandex: "your-yandex-verification-code",
-    yahoo: "your-yahoo-verification-code",
+    canonical: "https://clock.myenum.in",
   },
   category: "utility",
   generator: "v0.dev",
 };
 
-// Root layout component
 export default function RootLayout({
   children,
 }: {
@@ -90,13 +83,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="canonical" href="https://clocktime.app" />
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        {/* ✅ Google AdSense verification tag */}
+        <meta name="google-adsense-account" content="ca-pub-5714264985066358" />
+
+        <link rel="canonical" href="https://clock.myenum.in" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" href="/icon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#3b82f6" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         {/* Preload Inter font */}
         <link
@@ -128,7 +126,11 @@ export default function RootLayout({
         />
 
         {/* Google Ads */}
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5714264985066358" crossorigin="anonymous"></script>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5714264985066358"
+          crossOrigin="anonymous"
+        ></script>
 
         {/* Structured Data */}
         <script
@@ -140,7 +142,7 @@ export default function RootLayout({
               name: "Clock Time - Real-Time World Clock",
               description:
                 "Free online clock time display with automatic location detection. View current time, world clock, and time zone converter.",
-              url: "https://clocktime.app",
+              url: "https://clock.myenum.in",
               applicationCategory: "UtilityApplication",
               operatingSystem: "Any",
               offers: {
@@ -157,7 +159,7 @@ export default function RootLayout({
                 "Weather information",
                 "Alarm functionality",
               ],
-              screenshot: "https://clocktime.app/screenshot.png",
+              screenshot: "https://clock.myenum.in/screenshot.png",
               author: {
                 "@type": "Organization",
                 name: "TimeZone Master",
