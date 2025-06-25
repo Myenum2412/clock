@@ -87,7 +87,7 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         {/* ✅ Google AdSense verification tag */}
-        <meta name="google-adsense-account" content="ca-pub-5714264985066358" />
+        <meta name="google-adsense-account" content="ca-pub-5714264985066358">
 
         <link rel="canonical" href="https://clock.myenum.in" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
@@ -124,10 +124,6 @@ export default function RootLayout({
             `,
           }}
         />
-
-        {/* Google Ads */}
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5714264985066358"
-     crossorigin="anonymous"></script>
 
         {/* Structured Data */}
         <script
