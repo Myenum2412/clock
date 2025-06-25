@@ -86,9 +86,6 @@ export default function RootLayout({
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        {/* ✅ Google AdSense verification tag */}
-        <meta name="google-adsense-account" content="ca-pub-5714264985066358">
-
         <link rel="canonical" href="https://clock.myenum.in" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" href="/icon.svg" type="image/svg+xml" />
@@ -108,6 +105,9 @@ export default function RootLayout({
         {/* DNS prefetch for performance */}
         <link rel="dns-prefetch" href="//fonts.googleapis.com" />
         <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5714264985066358"
+     crossorigin="anonymous"></script>
 
         {/* Google tag (gtag.js) */}
         <script
